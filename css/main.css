@@ -1,0 +1,315 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.37em;
+    background: #FDFCEF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+h1 {
+    font-size: 50px;
+    max-width: 465px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    margin: 0px;
+}
+
+section {
+    padding-top: 120px;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 60px;
+}
+
+.btn {
+    background: #FF6861;
+    border-radius: 100px;
+    color: #FFFFFF;
+    padding: 22px 70px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    width: 227px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: #f79792;
+}
+
+.offer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 82px;
+}
+
+.offer {
+    max-width: 465px;
+}
+
+.hero-text {
+    margin: 30px 0px;
+    max-width: 370px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    max-width: 720px;
+    margin: 70px auto 0 auto;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.icon-item {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.icon-item:hover .icon {
+    opacity: 0.6;
+}
+
+.icon-title {
+    margin-bottom: 11px;
+}
+
+.practice-wrap {
+    background: linear-gradient(102deg, #FFF6DF 17.38%, #FFDFDE 81.25%);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    padding: 76px 125px 75px 122px;
+}
+
+.practice-block {
+    max-width: 475px;
+    margin-right: 101px;
+}
+
+.practice-title {
+    text-align: left;
+}
+
+.practice-text {
+    margin: 24px 0;
+    max-width: 371px;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.practice-wrap img {
+    animation: 5s linear 0s normal none infinite running rot;
+}
+
+
+.footer {
+    padding: 120px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+/*Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/*Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .logo {
+        margin: 0 auto;
+        display: block;
+    }
+
+
+    .offer-wrapper {
+        max-width: 720px;
+        flex-direction: column-reverse;
+        gap: 51px;
+    }
+
+    .offer {
+        max-width: 720px;
+    }
+
+    h1 {
+        max-width: 720px;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 720px;
+        text-align: center;
+    }
+
+    .btn {
+        margin: 0 auto;
+    }
+
+    .practice-wrap {
+        flex-direction: column-reverse;
+        gap: 101px;
+        text-align: center;
+        padding: 101px 144px;
+    }
+
+    .practice-block {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .practice-title {
+        text-align: center;
+    }
+
+    .practice-text {
+        margin: 24px auto;
+    }
+
+}
+
+/*Small: 576px - 767px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .icons {
+        width: auto;
+        gap: 50px;
+    }
+
+    .icon-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .practice-block {
+        padding: 0;
+        text-align: center;
+    }
+
+    .practice-title {
+        text-align: center;
+    }
+
+    .practice-text {
+        margin: 24px auto;
+    }
+}
+
+/*Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15 px;
+    }
+
+    .hero {
+        width: 100%;
+        display: block;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .hero-text {
+        width: auto;
+    }
+
+    .practice-wrap {
+        width: auto;
+        padding: 70px 20px;
+
+    }
+
+    .practice-wrap img {
+        width: 201px;
+    }
+
+    .practice-block {
+        padding: 70px 20px;
+        text-align: center;
+    }
+
+    .practice-title {
+        text-align: center;
+    }
+
+    .practice-text {
+        margin: 24px auto;
+    }
+
+    section {
+        padding-top: 90px;
+    }
+
+    .footer {
+        padding: 90px 0;
+    }
+
+    .wrapper {
+        margin-top: 50px;
+    }
+
+}
